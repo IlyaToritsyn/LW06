@@ -8,3 +8,8 @@ script:
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  on:
+    repo: IlyaToritsyn/LW06
+    branch: master
+    tags: false

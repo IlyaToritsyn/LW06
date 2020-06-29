@@ -7,5 +7,10 @@ script:
   - cd ..
 deploy:
   provider: releases
-  api_key: $GITHUB_TOKEN
   prerelease: true
+  api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  on:
+    repo: IlyaToritsyn/LW06
+    branch: dev
+    tags: false
